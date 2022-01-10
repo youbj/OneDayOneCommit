@@ -47,13 +47,45 @@ using namespace std;
 //}
 
 //2번 함수이용
+void minarr(int a, int *arr);
 
 int main()
 {
 	int n,i;
 	int* arr;
+	int count = 0, result = 0;
 
 	cin >> n;
+	arr = new int[n];
+
+	for (i = 0; i < n; i++)
+		cin >> arr[i];
+
+	for (i = 1; i < n; i++)
+	{
+		minarr(i, arr);
+	}
+
+	for (i = 0; i < n; i++)
+	{
+		count += arr[i];
+		result += count;
+	}
+	cout << result;
 }
 
+void minarr(int a, int* arr)
+{
+	int b=0;
+
+	for (int j = 0; j < a; j++)
+	{
+		if (arr[a] < arr[j])
+		{
+			b = arr[a];
+			arr[a] = arr[j];
+			arr[j] = b;
+		}
+	}
+}
 
