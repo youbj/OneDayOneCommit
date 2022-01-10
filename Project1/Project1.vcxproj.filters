@@ -18,5 +18,8 @@
     <ClCompile Include="문자열_번갈아.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="22_01_10.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
