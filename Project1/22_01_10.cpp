@@ -14,12 +14,12 @@
 */
 
 
-#include <iostream>
-#include <algorithm> // sort함수 사용을 위한 알고리즘 헤더
-
-using namespace std;
-
-
+//#include <iostream>
+//#include <algorithm> // sort함수 사용을 위한 알고리즘 헤더
+//
+//using namespace std;
+//
+//
 //1번 알고리즘 헤더파일 사용
 //int main()
 //{
@@ -45,47 +45,47 @@ using namespace std;
 //  delete[]arr;
 //	return 0;
 //}
-
+//
 //2번 함수이용
-void minarr(int a, int *arr);
-
-int main()
-{
-	int n,i;
-	int* arr;
-	int count = 0, result = 0;
-
-	cin >> n;
-	arr = new int[n];
-
-	for (i = 0; i < n; i++)
-		cin >> arr[i];
-
-	for (i = 1; i < n; i++)
-	{
-		minarr(i, arr);
-	}
-
-	for (i = 0; i < n; i++)
-	{
-		count += arr[i];
-		result += count;
-	}
-	cout << result;
-}
-
-void minarr(int a, int* arr)
-{
-	int b=0;
-
-	for (int j = 0; j < a; j++)
-	{
-		if (arr[a] < arr[j])
-		{
-			b = arr[a];
-			arr[a] = arr[j];
-			arr[j] = b;
-		}
-	}
-}
+//void minarr(int a, int *arr);
+//
+//int main()
+//{
+//	int n,i;
+//	int* arr;
+//	int count = 0, result = 0;
+//
+//	cin >> n;
+//	arr = new int[n];
+//
+//	for (i = 0; i < n; i++)
+//		cin >> arr[i];
+//
+//	for (i = 1; i < n; i++)
+//	{
+//		minarr(i, arr);
+//	}
+//
+//	for (i = 0; i < n; i++)
+//	{
+//		count += arr[i];
+//		result += count;
+//	}
+//	cout << result;
+//}
+//
+//void minarr(int a, int* arr)
+//{
+//	int b=0;
+//
+//	for (int j = 0; j < a; j++)
+//	{
+//		if (arr[a] < arr[j])
+//		{
+//			b = arr[a];
+//			arr[a] = arr[j];
+//			arr[j] = b;
+//		}
+//	}
+//}
 
