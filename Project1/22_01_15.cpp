@@ -51,6 +51,7 @@ int main()
 	}
 
 	sort(arr.begin(), arr.end());
+	cout << endl;
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i].first << " " << arr[i].second;
