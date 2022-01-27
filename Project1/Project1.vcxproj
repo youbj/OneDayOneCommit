@@ -142,6 +142,8 @@
   <ItemGroup>
     <ClCompile Include="22.01.21.cpp" />
     <ClCompile Include="22.01.24.cpp" />
+    <ClCompile Include="22.01.26_programmers.cpp" />
+    <ClCompile Include="22.01.27.cpp" />
     <ClCompile Include="22_01_10.cpp" />
     <ClCompile Include="22_01_11.cpp" />
     <ClCompile Include="22_01_12.cpp" />

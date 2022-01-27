@@ -36,5 +36,11 @@
     <ClCompile Include="22.01.24.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="22.01.26_programmers.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="22.01.27.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
