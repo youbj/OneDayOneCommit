@@ -151,6 +151,17 @@
     <ClCompile Include="22_02_08.cpp" />
     <ClCompile Include="22_02_08_2.cpp" />
     <ClCompile Include="22_02_08_3cpp.cpp" />
+    <ClCompile Include="22_02_09.cpp" />
+    <ClCompile Include="22_02_09_2.cpp" />
+    <ClCompile Include="22_02_09_3.cpp" />
+    <ClCompile Include="22_02_09_4.cpp" />
+    <ClCompile Include="22_02_10.cpp" />
+    <ClCompile Include="22_02_10_2.cpp" />
+    <ClCompile Include="22_02_14.cpp" />
+    <ClCompile Include="22_02_14_2.cpp" />
+    <ClCompile Include="22_02_15.cpp" />
+    <ClCompile Include="22_02_15_2.cpp" />
+    <ClCompile Include="22_02_16_1.cpp" />
     <ClCompile Include="문자열_번갈아.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
