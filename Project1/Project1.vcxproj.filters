@@ -90,5 +90,29 @@
     <ClCompile Include="22_02_16_1.cpp">
       <Filter>소스 파일\February</Filter>
     </ClCompile>
+    <ClCompile Include="22_02_17.cpp">
+      <Filter>소스 파일\February</Filter>
+    </ClCompile>
+    <ClCompile Include="22_02_21.cpp">
+      <Filter>소스 파일\February</Filter>
+    </ClCompile>
+    <ClCompile Include="22_2_22.cpp">
+      <Filter>소스 파일\February</Filter>
+    </ClCompile>
+    <ClCompile Include="22_2_22_2.cpp">
+      <Filter>소스 파일\February</Filter>
+    </ClCompile>
+    <ClCompile Include="22_02_23.cpp">
+      <Filter>소스 파일\February</Filter>
+    </ClCompile>
+    <ClCompile Include="22_02_23_2.cpp">
+      <Filter>소스 파일\February</Filter>
+    </ClCompile>
+    <ClCompile Include="22_02_24.cpp">
+      <Filter>소스 파일\February</Filter>
+    </ClCompile>
+    <ClCompile Include="22_02_24_2.cpp">
+      <Filter>소스 파일\February</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
