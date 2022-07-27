@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\February">
       <UniqueIdentifier>{f7851a53-7735-44b6-96ec-9d46673c5d46}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\July">
+      <UniqueIdentifier>{06ccaa0b-2874-409f-b25e-388429c8b830}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="22.01.21.cpp">
@@ -113,6 +116,12 @@
     </ClCompile>
     <ClCompile Include="22_02_24_2.cpp">
       <Filter>소스 파일\February</Filter>
+    </ClCompile>
+    <ClCompile Include="22_07_27_baeckjoon2480.cpp">
+      <Filter>소스 파일\July</Filter>
+    </ClCompile>
+    <ClCompile Include="22_07_27_backjoon_4673.cpp">
+      <Filter>소스 파일\July</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
