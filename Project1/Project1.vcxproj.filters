@@ -22,6 +22,9 @@
     <Filter Include="소스 파일\July">
       <UniqueIdentifier>{06ccaa0b-2874-409f-b25e-388429c8b830}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\August">
+      <UniqueIdentifier>{25d56ac0-5cad-484b-a653-f04306c427bc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="22.01.21.cpp">
@@ -125,6 +128,12 @@
     </ClCompile>
     <ClCompile Include="22_07_29_1.cpp">
       <Filter>소스 파일\July</Filter>
+    </ClCompile>
+    <ClCompile Include="22_08_02.cpp">
+      <Filter>소스 파일\August</Filter>
+    </ClCompile>
+    <ClCompile Include="22_08_02_2.cpp">
+      <Filter>소스 파일\August</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
