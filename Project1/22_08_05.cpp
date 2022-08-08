@@ -110,28 +110,28 @@ using namespace std;
 //
 //}
 
-void main() {
-	vector<int> numbers ={ 3, 30, 34, 5, 9 };
-	int a = 0;
-	vector<string>str;
-	string s;
-	string answer = "";
-
-	for (int i = 0; i < numbers.size(); i++) {
-		s=to_string(numbers[i]);
-		str.push_back(s);
-	}
-	sort(str.begin(), str.end());
-	for (int i = str.size()-1; i >= 0; i--) {
-
-		if (i == 1) {
-			if (str[i][str[i].length() - 1] == '0') {
-				answer += str[0] + str[1];
-				break;
-			}
-		}
-		answer += str[i];
-		
-	}
-	cout << answer;
-}
+//void main() {
+//	vector<int> numbers ={ 3, 30, 34, 5, 9 };
+//	int a = 0;
+//	vector<string>str;
+//	string s;
+//	string answer = "";
+//
+//	for (int i = 0; i < numbers.size(); i++) {
+//		s=to_string(numbers[i]);
+//		str.push_back(s);
+//	}
+//	sort(str.begin(), str.end());
+//	for (int i = str.size()-1; i >= 0; i--) {
+//
+//		if (i == 1) {
+//			if (str[i][str[i].length() - 1] == '0') {
+//				answer += str[0] + str[1];
+//				break;
+//			}
+//		}
+//		answer += str[i];
+//		
+//	}
+//	cout << answer;
+//}
