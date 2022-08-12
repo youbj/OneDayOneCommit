@@ -182,6 +182,7 @@
     <ClCompile Include="22_08_09.cpp" />
     <ClCompile Include="22_08_10.cpp" />
     <ClCompile Include="22_08_11.cpp" />
+    <ClCompile Include="22_08_12.cpp" />
     <ClCompile Include="22_2_22.cpp" />
     <ClCompile Include="22_2_22_2.cpp" />
     <ClCompile Include="문자열_번갈아.cpp" />
