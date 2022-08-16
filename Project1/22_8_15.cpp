@@ -189,17 +189,17 @@ using namespace std;
 //	cout << count;
 //}
 
-int main() {
-    int n, m, a, k;
-
-    cin >> n >> m >> a >> k;
-    int max, min;
-    if (n <= a - k)
-        max = n;
-    else
-        max = a - k;
-    min = (a - k) % m == 0 ? ((a - k) / m) + 1 : ((a - k) / m) + 2;
-
-    cout << max << " " << min;
-    return 0;
-}
+//int main() {
+//    int n, m, a, k;
+//
+//    cin >> n >> m >> a >> k;
+//    int max, min;
+//    if (n <= a - k)
+//        max = n;
+//    else
+//        max = a - k;
+//    min = (a - k) % m == 0 ? ((a - k) / m) + 1 : ((a - k) / m) + 2;
+//
+//    cout << max << " " << min;
+//    return 0;
+//}
