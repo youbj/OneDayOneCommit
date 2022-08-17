@@ -60,36 +60,36 @@ using namespace std;
 //
 //}
 
-/*10828 스택*/
-
-int main() {
-	int n;
-	vector<int>v;
-	cin >> n;
-
-	for (int i = 0; i < n; i++) {
-		string s;
-		int a;
-		getline(cin,s);
-
-		if (s == "top") {
-
-		}
-		else if (s == "pop") {
-
-		}
-		else if (s == "size") {
-
-		}
-		else if (s == "empty") {
-			if (v.empty() != 0) {
-
-			}
-		}
-		else {
-			stringstream ss(s);
-			ss >> a;
-
-		}
-	}
-}
+///*10828 스택*/
+//
+//int main() {
+//	int n;
+//	vector<int>v;
+//	cin >> n;
+//
+//	for (int i = 0; i < n; i++) {
+//		string s;
+//		int a;
+//		getline(cin,s);
+//
+//		if (s == "top") {
+//
+//		}
+//		else if (s == "pop") {
+//
+//		}
+//		else if (s == "size") {
+//
+//		}
+//		else if (s == "empty") {
+//			if (v.empty() != 0) {
+//
+//			}
+//		}
+//		else {
+//			stringstream ss(s);
+//			ss >> a;
+//
+//		}
+//	}
+//}
