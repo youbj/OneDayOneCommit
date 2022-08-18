@@ -40,56 +40,54 @@ using namespace std;
 //	cout << answer;
 //}
 
-/*10828 스택*/
-
-int main() {
-	int n=0;
-	vector<int>v;
-	cin >> n;
-
-	for (int i = 0; i < n; i++) {
-		string s;
-		getline(cin, s);
-
-		if (s == "top") {
-			if (v.empty() != 0) {
-				v.push_back(-1);
-			}
-			else {
-				v.push_back(v.back());
-			}
-		}
-		else if (s == "pop") {
-			if (v.empty() != 0) {
-				v.push_back(-1);
-			}
-			else {
-				v.push_back(v.back());
-				v.pop_back();
-			}
-		}
-		else if (s == "size") {
-			v.push_back(v.size());
-		}
-		else if (s == "empty") {
-			if (v.empty() != 0) {
-				v.push_back(1);
-			}
-			else
-				v.push_back(0);
-		}
-		else {
-			string str="";
-			for (int k = 5; k < s.length(); k++)
-				str += s[k];
-			int a = stoi(str);
-			cout << a << endl;
-			v.push_back(a);
-		}
-	}
-
-	for (int i = 0; i < v.size(); i++) {
-		cout << v[i] << "\n";
-	}
-	return 0;
-}
+///*10828 스택*/
+//
+//int main() {
+//	int n=0;
+//	vector<string>v;
+//	cin >> n;
+//
+//	for (int i = 0; i < n; i++) {
+//		string s;
+//		getline(cin, s);
+//
+//		if (s == "top") {
+//			if (v.empty() != 0) {
+//				v.push_back("-1");
+//			}
+//			else {
+//				v.push_back(v.back());
+//			}
+//		}
+//		else if (s == "pop") {
+//			if (v.empty() != 0) {
+//				v.push_back("-1");
+//			}
+//			else {
+//				v.push_back(v.back());
+//				v.pop_back();
+//			}
+//		}
+//		else if (s == "size") {
+//			v.push_back(to_string(v.size()));
+//		}
+//		else if (s == "empty") {
+//			if (v.empty() != 0) {
+//				v.push_back("1");
+//			}
+//			else
+//				v.push_back("0");
+//		}
+//		else {
+//			string str="";
+//			for (int k = 5; k < s.length(); k++)
+//				str += s[k];
+//			v.push_back(str);
+//		}
+//	}
+//
+//	for (int i = 0; i < v.size(); i++) {
+//		cout <<i<<" 번째 : " << v[i] << "\n";
+//	}
+//	return 0;
+//}

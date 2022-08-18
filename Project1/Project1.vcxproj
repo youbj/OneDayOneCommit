@@ -185,9 +185,10 @@
     <ClCompile Include="22_08_12.cpp" />
     <ClCompile Include="22_08_16.cpp" />
     <ClCompile Include="22_08_17.cpp" />
+    <ClCompile Include="22_08_18.cpp" />
     <ClCompile Include="22_2_22.cpp" />
     <ClCompile Include="22_2_22_2.cpp" />
-    <ClCompile Include="22_8_15.cpp" />
+    <ClCompile Include="22_08_15.cpp" />
     <ClCompile Include="문자열_번갈아.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
