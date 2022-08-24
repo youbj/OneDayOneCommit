@@ -186,37 +186,37 @@ using namespace std;
 //	return 0;
 //}
 
-/*강의실 배정*/
-
-int main() {
-	int n;
-	cin >> n;
-	vector<pair<int, int>>v;
-
-	for (int i = 0; i < n; i++) {
-		int a, b;
-		cin >> a >> b;
-		v.push_back(make_pair(a, b));
-	}
-	sort(v.begin(), v.end());
-	
-	vector<pair<int, int>>ans;
-	ans.push_back(make_pair(v[0].first, v[0].second));
-	for (int i = 1; i < n; i++) {
-		int a = 0;
-		for (int j = 0; j < ans.size(); j++) {
-			if (ans[j].first <= v[i].first && v[i].first < ans[j].second) {
-				a++;
-			}
-			else {
-				ans[j].second = v[i].second;
-				j = n;
-
-			}
-		}
-		if (a == ans.size()) {
-			ans.push_back(make_pair(v[i].first, v[i].second));
-		}
-	}
-	cout << ans.size();
-}
+///*강의실 배정*/
+//
+//int main() {
+//	int n;
+//	cin >> n;
+//	vector<pair<int, int>>v;
+//
+//	for (int i = 0; i < n; i++) {
+//		int a, b;
+//		cin >> a >> b;
+//		v.push_back(make_pair(a, b));
+//	}
+//	sort(v.begin(), v.end());
+//	
+//	vector<pair<int, int>>ans;
+//	ans.push_back(make_pair(v[0].first, v[0].second));
+//	for (int i = 1; i < n; i++) {
+//		int a = 0;
+//		for (int j = 0; j < ans.size(); j++) {
+//			if (ans[j].first <= v[i].first && v[i].first < ans[j].second) {
+//				a++;
+//			}
+//			else {
+//				ans[j].second = v[i].second;
+//				j = n;
+//
+//			}
+//		}
+//		if (a == ans.size()) {
+//			ans.push_back(make_pair(v[i].first, v[i].second));
+//		}
+//	}
+//	cout << ans.size();
+//}
