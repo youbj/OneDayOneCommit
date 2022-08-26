@@ -184,20 +184,20 @@ using namespace std;
 //	}
 //}
 
-/*11656 접미사 배열*/
-
-int main() {
-	string s;
-	cin >> s;
-	vector<string>str;
-	str.push_back(s);
-	for (int i = 1; i < s.length(); i++) {
-		string st = s.substr(s.length() - i);
-		str.push_back(st);
-	}
-	sort(str.begin(), str.end());
-
-	for (int i = 0;i<str.size();i++) {
-		cout << str[i] << "\n";
-	}
-}
+///*11656 접미사 배열*/
+//
+//int main() {
+//	string s;
+//	cin >> s;
+//	vector<string>str;
+//	str.push_back(s);
+//	for (int i = 1; i < s.length(); i++) {
+//		string st = s.substr(s.length() - i);
+//		str.push_back(st);
+//	}
+//	sort(str.begin(), str.end());
+//
+//	for (int i = 0;i<str.size();i++) {
+//		cout << str[i] << "\n";
+//	}
+//}

@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="2022_08_26.cpp" />
     <ClCompile Include="22.01.21.cpp" />
     <ClCompile Include="22.01.24.cpp" />
     <ClCompile Include="22.01.26_programmers.cpp" />
