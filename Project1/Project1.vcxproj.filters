@@ -198,5 +198,8 @@
     <ClCompile Include="22_09_01.cpp">
       <Filter>소스 파일\September</Filter>
     </ClCompile>
+    <ClCompile Include="22_09_06.cpp">
+      <Filter>소스 파일\September</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

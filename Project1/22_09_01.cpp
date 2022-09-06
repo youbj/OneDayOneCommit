@@ -110,19 +110,36 @@ using namespace std;
 //
 //}
 
-/*17298 오큰수*/
-
-int main() {
-	vector<string>answer;
-
-	while(1) {
-		string s="";
-		getline(cin, s);
-		if (s == ".")
-			break;
-
-		for (int i = 0; i < s.length(); i++) {
-
-		}
-	}
-}
+///*17298 오큰수*/
+//
+//int main() {
+//	ios_base::sync_with_stdio(false);
+//	cin.tie(NULL); cout.tie(NULL);
+//	int n; cin >> n;
+//
+//	vector<int>a;
+//	vector<int>v;
+//	for (int i = 0; i < n; i++) {
+//		int num; cin >> num;
+//		a.push_back(num);
+//	}
+//
+//	for (int i = 0; i < n - 1; i++) {
+//		bool num=false;
+//		for (int j = i + 1; j < n; j++) {
+//			if (a[i] < a[j]) {
+//				v.push_back(a[j]);
+//				num = true;
+//				j = n;
+//			}
+//		}
+//		if (!num) {
+//			v.push_back(-1);
+//		}
+//	}
+//	v.push_back(-1);
+//
+//	for (int i = 0; i < n; i++) {
+//		cout << v[i] << " ";
+//	}
+//}
