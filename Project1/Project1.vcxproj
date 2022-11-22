@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="2022_09_22.cpp" />
     <ClCompile Include="22_08_26.cpp" />
     <ClCompile Include="22.01.21.cpp" />
     <ClCompile Include="22.01.24.cpp" />
@@ -196,6 +197,8 @@
     <ClCompile Include="22_09_01.cpp" />
     <ClCompile Include="22_09_06.cpp" />
     <ClCompile Include="22_09_13.cpp" />
+    <ClCompile Include="22_09_14.cpp" />
+    <ClCompile Include="22_11_16.cpp" />
     <ClCompile Include="22_2_22.cpp" />
     <ClCompile Include="22_2_22_2.cpp" />
     <ClCompile Include="22_08_15.cpp" />

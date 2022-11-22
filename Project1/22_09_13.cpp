@@ -5,36 +5,37 @@
 #include <set>
 using namespace std;
 
-/*1041 주사위*/
-/* 3개인 면 4개 (n-2)*4 + (n-1)*4 + (n-2)^2 + (n-2)*(n-1) */
-
-int main() {
-
-	int n;
-	cin >> n;
-	long long int arr[6];
-	for (int i = 0; i < 6; i++) {
-		cin >> arr[i];
-	}
-
-	sort(arr, arr + 6);
-	int answer = 0;
-
-	for (int i = 0; i < 3; i++) {
-		answer += arr[i];
-	}answer *= 4;
-	cout << answer << "\n";
-	long long int a = arr[0] + arr[1];
-
-	a *= ((n - 2) * (n - 1));
-	answer += a;
-	cout << answer << "\n";
-	a = arr[0];
-	a *= (((n - 2) * (n - 2)) + (a * (n - 1)));
-	answer += a;
-	cout << answer << "\n";
-	cout << answer;
-}
+///*1041 주사위*/
+///* 3개인 면 4개 (n-2)*4 + (n-1)*4 + (n-2)^2 + (n-2)*(n-1) */
+//
+//int main() {
+//
+//	int n;
+//	cin >> n;
+//	long long int arr[6];
+//	long long int max = 0;
+//	int k;
+//	for (int i = 0; i < 6; i++) {
+//		cin >> arr[i];
+//		if (arr[i] > max)
+//			k = i;
+//	}
+//	arr[k] = 0;
+//	sort(arr, arr + 6);
+//	long long int answer = 0;
+//	long long int a = arr[0];
+//	if (n > 2) {
+//		answer += (a * 4 * ((n - 2) * (n - 1) + (n - 2) * (n - 2)));
+//	}
+//	a += arr[1];
+//
+//	answer += (a * 4 * ((2 * n) - 3));
+//
+//	a += arr[2];
+//
+//
+//	cout << answer;
+//}
 
 ///*11728 배열합치기*/
 //
