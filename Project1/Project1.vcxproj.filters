@@ -31,6 +31,9 @@
     <Filter Include="소스 파일\November">
       <UniqueIdentifier>{a9302fad-c319-4a9c-8521-ba9e2906a721}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\2023/1">
+      <UniqueIdentifier>{39acdeb0-80d6-45c4-b2c8-3a73503ede03}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="22.01.21.cpp">
@@ -215,6 +218,9 @@
     </ClCompile>
     <ClCompile Include="22_11_16.cpp">
       <Filter>소스 파일\November</Filter>
+    </ClCompile>
+    <ClCompile Include="greedy1.cpp">
+      <Filter>소스 파일\2023/1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
