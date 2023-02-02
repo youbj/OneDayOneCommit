@@ -13,220 +13,232 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\January">
-      <UniqueIdentifier>{af88158b-28ab-4a8b-b71f-86b581d2c240}</UniqueIdentifier>
+    <Filter Include="소스 파일\2023">
+      <UniqueIdentifier>{99258d3d-69ef-4a90-84dd-4057bbc60baf}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\February">
-      <UniqueIdentifier>{f7851a53-7735-44b6-96ec-9d46673c5d46}</UniqueIdentifier>
+    <Filter Include="소스 파일\2023\2023/1">
+      <UniqueIdentifier>{39acdeb0-80d6-45c4-b2c8-3a73503ede03}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\July">
-      <UniqueIdentifier>{06ccaa0b-2874-409f-b25e-388429c8b830}</UniqueIdentifier>
+    <Filter Include="소스 파일\2022">
+      <UniqueIdentifier>{bcb9e18e-970d-4f73-83fd-4217d5e947e9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\August">
+    <Filter Include="소스 파일\2022\August">
       <UniqueIdentifier>{25d56ac0-5cad-484b-a653-f04306c427bc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\September">
-      <UniqueIdentifier>{da058425-27f8-4a4e-98ad-a294380b69c5}</UniqueIdentifier>
+    <Filter Include="소스 파일\2022\February">
+      <UniqueIdentifier>{f7851a53-7735-44b6-96ec-9d46673c5d46}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\November">
+    <Filter Include="소스 파일\2022\January">
+      <UniqueIdentifier>{af88158b-28ab-4a8b-b71f-86b581d2c240}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\2022\July">
+      <UniqueIdentifier>{06ccaa0b-2874-409f-b25e-388429c8b830}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\2022\November">
       <UniqueIdentifier>{a9302fad-c319-4a9c-8521-ba9e2906a721}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\2023/1">
-      <UniqueIdentifier>{39acdeb0-80d6-45c4-b2c8-3a73503ede03}</UniqueIdentifier>
+    <Filter Include="소스 파일\2022\September">
+      <UniqueIdentifier>{da058425-27f8-4a4e-98ad-a294380b69c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\2023\2023/2">
+      <UniqueIdentifier>{d5bfc54d-ce82-40e8-8ea0-645d46d2e281}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="22.01.21.cpp">
-      <Filter>소스 파일\January</Filter>
+      <Filter>소스 파일\2022\January</Filter>
     </ClCompile>
     <ClCompile Include="22.01.24.cpp">
-      <Filter>소스 파일\January</Filter>
+      <Filter>소스 파일\2022\January</Filter>
     </ClCompile>
     <ClCompile Include="22.01.26_programmers.cpp">
-      <Filter>소스 파일\January</Filter>
+      <Filter>소스 파일\2022\January</Filter>
     </ClCompile>
     <ClCompile Include="22.01.27.cpp">
-      <Filter>소스 파일\January</Filter>
+      <Filter>소스 파일\2022\January</Filter>
     </ClCompile>
     <ClCompile Include="22_01_10.cpp">
-      <Filter>소스 파일\January</Filter>
+      <Filter>소스 파일\2022\January</Filter>
     </ClCompile>
     <ClCompile Include="22_01_11.cpp">
-      <Filter>소스 파일\January</Filter>
+      <Filter>소스 파일\2022\January</Filter>
     </ClCompile>
     <ClCompile Include="22_01_12.cpp">
-      <Filter>소스 파일\January</Filter>
+      <Filter>소스 파일\2022\January</Filter>
     </ClCompile>
     <ClCompile Include="22_01_13.cpp">
-      <Filter>소스 파일\January</Filter>
+      <Filter>소스 파일\2022\January</Filter>
     </ClCompile>
     <ClCompile Include="문자열_번갈아.cpp">
-      <Filter>소스 파일\January</Filter>
+      <Filter>소스 파일\2022\January</Filter>
     </ClCompile>
     <ClCompile Include="22_02_08.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_08_2.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_08_3cpp.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_09.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_09_2.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_09_3.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_09_4.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_10.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_10_2.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_14.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_14_2.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_15.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_15_2.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_16_1.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_17.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_21.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_2_22.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_2_22_2.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_23.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_23_2.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_24.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_02_24_2.cpp">
-      <Filter>소스 파일\February</Filter>
+      <Filter>소스 파일\2022\February</Filter>
     </ClCompile>
     <ClCompile Include="22_07_27_baeckjoon2480.cpp">
-      <Filter>소스 파일\July</Filter>
+      <Filter>소스 파일\2022\July</Filter>
     </ClCompile>
     <ClCompile Include="22_07_27_backjoon_4673.cpp">
-      <Filter>소스 파일\July</Filter>
+      <Filter>소스 파일\2022\July</Filter>
     </ClCompile>
     <ClCompile Include="22_07_29_1.cpp">
-      <Filter>소스 파일\July</Filter>
+      <Filter>소스 파일\2022\July</Filter>
     </ClCompile>
     <ClCompile Include="22_08_02.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_02_2.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_03_1.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_04.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_05.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_08.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_09.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_10.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_11.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_12.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_15.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_16.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_17.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_18.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_19.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_22.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_23.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_24.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_25.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_26.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_08_28.cpp">
-      <Filter>소스 파일\August</Filter>
+      <Filter>소스 파일\2022\August</Filter>
     </ClCompile>
     <ClCompile Include="22_09_01.cpp">
-      <Filter>소스 파일\September</Filter>
+      <Filter>소스 파일\2022\September</Filter>
     </ClCompile>
     <ClCompile Include="22_09_06.cpp">
-      <Filter>소스 파일\September</Filter>
+      <Filter>소스 파일\2022\September</Filter>
     </ClCompile>
     <ClCompile Include="22_09_13.cpp">
-      <Filter>소스 파일\September</Filter>
+      <Filter>소스 파일\2022\September</Filter>
     </ClCompile>
     <ClCompile Include="22_09_14.cpp">
-      <Filter>소스 파일\September</Filter>
+      <Filter>소스 파일\2022\September</Filter>
     </ClCompile>
     <ClCompile Include="2022_09_22.cpp">
-      <Filter>소스 파일\September</Filter>
+      <Filter>소스 파일\2022\September</Filter>
     </ClCompile>
     <ClCompile Include="22_11_16.cpp">
-      <Filter>소스 파일\November</Filter>
+      <Filter>소스 파일\2022\November</Filter>
     </ClCompile>
     <ClCompile Include="greedy1.cpp">
-      <Filter>소스 파일\2023/1</Filter>
+      <Filter>소스 파일\2023\2023/1</Filter>
     </ClCompile>
     <ClCompile Include="1.23.cpp">
-      <Filter>소스 파일\2023/1</Filter>
+      <Filter>소스 파일\2023\2023/1</Filter>
     </ClCompile>
     <ClCompile Include="1.27.cpp">
-      <Filter>소스 파일\2023/1</Filter>
+      <Filter>소스 파일\2023\2023/1</Filter>
+    </ClCompile>
+    <ClCompile Include="2_2.cpp">
+      <Filter>소스 파일\2023\2023/2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

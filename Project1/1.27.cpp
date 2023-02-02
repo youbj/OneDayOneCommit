@@ -32,29 +32,29 @@ using namespace std;
 //
 //}
 
-
-string solution(string number, int k) {
-    string answer = "";
-    return answer;
-}
-
-int main() {
-    string number="4177252841";
-    int k=4;
-    string answer = "";
-
-    for (int i = 0; i < number.length(); i++) {
-        char max = number[i];
-        int max_num = i;
-        for (int j = 1; j < k; j++) {
-            if (max < number[j]) {
-                max = number[j];
-                max_num = j;
-            }
-        }
-
-        cout << number.substr(0,max_num)+"  " + number.substr(max_num, 100) << endl;
-        number = number.substr(max_num, 100);
-    }
-    cout << number;
-}
+//
+//string solution(string number, int k) {
+//    string answer = "";
+//    return answer;
+//}
+//
+//int main() {
+//    string number="4177252841";
+//    int k=4;
+//    string answer = "";
+//
+//    for (int i = 0; i < number.length(); i++) {
+//        char max = number[i];
+//        int max_num = i;
+//        for (int j = 1; j < k; j++) {
+//            if (max < number[j]) {
+//                max = number[j];
+//                max_num = j;
+//            }
+//        }
+//
+//        cout << number.substr(0,max_num)+"  " + number.substr(max_num, 100) << endl;
+//        number = number.substr(max_num, 100);
+//    }
+//    cout << number;
+//}
