@@ -205,6 +205,7 @@
     <ClCompile Include="22_2_22_2.cpp" />
     <ClCompile Include="22_08_15.cpp" />
     <ClCompile Include="2_2.cpp" />
+    <ClCompile Include="2_28.cpp" />
     <ClCompile Include="greedy1.cpp" />
     <ClCompile Include="문자열_번갈아.cpp" />
   </ItemGroup>
