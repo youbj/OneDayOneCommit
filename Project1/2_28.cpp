@@ -40,6 +40,3 @@ using namespace std;
 //    return answer;
 //}
 
-int main() {
-
-}
