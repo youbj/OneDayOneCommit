@@ -214,6 +214,7 @@
     <ClCompile Include="5_17_2.cpp" />
     <ClCompile Include="5_17_3.cpp" />
     <ClCompile Include="6_21.cpp" />
+    <ClCompile Include="6_27.cpp" />
     <ClCompile Include="greedy1.cpp" />
     <ClCompile Include="문자열_번갈아.cpp" />
   </ItemGroup>
