@@ -68,38 +68,36 @@ using namespace std;
 //    return answer;
 //}
 
-using namespace std;
-
-vector<int> solution(vector<int> prices) {
-    int n = prices.size();
-    vector<int> answer(n);
-
-    stack<int> s;
-    for (int i = 0; i < n; i++) {
-        while (!s.empty() && prices[s.top()] > prices[i]) {
-            cout << " 80번줄 " << s.top() << endl;
-            int top = s.top();
-            s.pop();
-            answer[top] = i - top;
-        }
-        s.push(i);
-        cout <<" 85번줄 " << s.top() << endl;
-    }
-
-    while (!s.empty()) {
-        int top = s.top();
-        s.pop();
-        answer[top] = n - top - 1;
-    }
-
-    return answer;
-}
-
-
-int main() {
-    vector<int> v = { 1, 2, 3, 2, 1 };
-    for (auto i : solution(v)) {
-        cout << i << "  ";
-    }
-
-}
+//vector<int> solution(vector<int> prices) {
+//    int n = prices.size();
+//    vector<int> answer(n);
+//
+//    stack<int> s;
+//    for (int i = 0; i < n; i++) {
+//        while (!s.empty() && prices[s.top()] > prices[i]) {
+//            cout << " 80번줄 " << s.top() << endl;
+//            int top = s.top();
+//            s.pop();
+//            answer[top] = i - top;
+//        }
+//        s.push(i);
+//        cout <<" 85번줄 " << s.top() << endl;
+//    }
+//
+//    while (!s.empty()) {
+//        int top = s.top();
+//        s.pop();
+//        answer[top] = n - top - 1;
+//    }
+//
+//    return answer;
+//}
+//
+//
+//int main() {
+//    vector<int> v = { 1, 2, 3, 2, 1 };
+//    for (auto i : solution(v)) {
+//        cout << i << "  ";
+//    }
+//
+//}
