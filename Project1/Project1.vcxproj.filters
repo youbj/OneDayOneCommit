@@ -282,5 +282,8 @@
     <ClCompile Include="6_28.cpp">
       <Filter>소스 파일\2023\2023/6</Filter>
     </ClCompile>
+    <ClCompile Include="6_29.cpp">
+      <Filter>소스 파일\2023\2023/6</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
