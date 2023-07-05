@@ -251,37 +251,37 @@
 
 /*백준 숫자 카드*/
 
-#include <iostream>
-#include <unordered_map>
-#include <vector>
-using namespace std;
-
-int main() {
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL); cout.tie(NULL);
-	int n, m;
-	unordered_map<long long int, int> sg;
-	vector<int>answer;
-	cin >> n;
-
-	for (int i = 0; i < n; i++) {
-		long long int num;
-		cin >> num;
-		sg.insert(make_pair(num, 0));
-	}
-
-	cin >> m;
-	for (int i = 0; i < m; i++) {
-		long long int num;
-		cin >> num;
-		if (sg.find(num) != sg.end()) {
-			answer.push_back(1);
-		}
-		else
-			answer.push_back(0);
-	}
-
-	for (auto pair : answer) {
-		cout << pair << " ";
-	}
-}
+//#include <iostream>
+//#include <unordered_map>
+//#include <vector>
+//using namespace std;
+//
+//int main() {
+//	ios_base::sync_with_stdio(false);
+//	cin.tie(NULL); cout.tie(NULL);
+//	int n, m;
+//	unordered_map<long long int, int> sg;
+//	vector<int>answer;
+//	cin >> n;
+//
+//	for (int i = 0; i < n; i++) {
+//		long long int num;
+//		cin >> num;
+//		sg.insert(make_pair(num, 0));
+//	}
+//
+//	cin >> m;
+//	for (int i = 0; i < m; i++) {
+//		long long int num;
+//		cin >> num;
+//		if (sg.find(num) != sg.end()) {
+//			answer.push_back(1);
+//		}
+//		else
+//			answer.push_back(0);
+//	}
+//
+//	for (auto pair : answer) {
+//		cout << pair << " ";
+//	}
+//}
