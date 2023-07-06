@@ -91,53 +91,53 @@
 
 /*성격 유형 검사*/
 
-#include <string>
-#include <vector>
-#include <unordered_map>
-#include <iostream>
-using namespace std;
+//#include <string>
+//#include <vector>
+//#include <unordered_map>
+//#include <iostream>
+//using namespace std;
+//
+//string solution(vector<string> survey, vector<int> choices) {
+//    string answer = "";
+//    vector<pair<char, int>> v= { {'R',0 }, {'T',0}, {'C',0}, {'F',0}, {'J',0}, {'M',0}, {'A',0}, {'N',0} };
+//
+//    for (int i = 0; i < choices.size(); i++) {
+//        int point = choices[i];
+//        if (point == 4) continue;
+//
+//        else if (point < 4) {
+//            char s = survey[i][0];
+//            for (int j = 0; j < 8; j++) {
+//                if (s == v[j].first) {
+//                    v[j].second += 4 - point;
+//                    break;
+//                } 
+//            }
+//        }
+//        else {
+//            char s = survey[i][1];
+//            for (int j = 0; j < 8; j++) {
+//                if (s == v[j].first) {
+//                    v[j].second += point - 4;
+//                    break;
+//                } 
+//            }
+//        }
+//    }
+//
+//    for (int i = 0; i < 7; i += 2) {
+//        char c;
+//        c = v[i].second >= v[i + 1].second ? v[i].first : v[i + 1].first;
+//        string str(1, c);
+//        answer+= str;
+//    }
+//    return answer;
+//}
 
-string solution(vector<string> survey, vector<int> choices) {
-    string answer = "";
-    vector<pair<char, int>> v;
 
-    unordered_map<char, int>surv = { {'R',0 }, {'T',0}, {'C',0}, {'F',0}, {'J',0}, {'M',0}, {'A',0}, {'N',0} };
 
-    cout << "초기화\n";
-
-    for (auto& pair : surv) {
-        cout << pair.first << "     " << pair.second << endl;
-    }
-    for (int i = 0; i < choices.size(); i++) {
-        int point = choices[i];
-        if (point == 4) continue;
-
-        else if (point < 4) {
-            char s = survey[i][0];
-            surv[s] += 4 - point;
-        }
-        else {
-            char s = survey[i][1];
-            surv[s] += point - 4;
-        }
-    }
-    for (auto& pair : surv) {
-        v.push_back(make_pair(pair.first, pair.second));
-        cout << pair.first <<"     " << pair.second << endl;
-    }
-
-    for (int i = 0; i < 7; i += 2) {
-        char c;
-        c = v[i].second > v[i + 1].second ? v[i].first : v[i + 1].first;
-        string str(1, c);
-        answer+= str;
-    }
-    return answer;
-}
 
 int main() {
-    vector<string> s1 = { "AN", "CF", "MJ", "RT", "NA" };
-    vector<int> s2 = { 5, 3, 2, 7, 5 };
-    cout<<"answer: "<< solution(s1, s2);
+   
 }
 
