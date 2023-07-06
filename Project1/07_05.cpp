@@ -81,95 +81,95 @@
 
 /**/
 
-#include <iostream>
-#include <deque>
-#include <algorithm>
-#include <sstream>
-#include <vector>
-#include <string>
-using namespace std;
-
-deque<int> que;
-
-void pop(int check, deque<int>que){
-	if (check) {
-		que.pop_back();
-	}
-	else {
-		que.pop_front();
-	}
-
-}
-
-int main() {
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL); cout.tie(NULL);
-	
-	int T; cin >> T;
-
-	vector<string> answer(T);
-
-	for (int i = 0; i < T; i++) {
-		string command, array;		
-		int n;
-
-		cin >> command; 
-		cin >> n; 
-		cin >> array;
-
-		array.erase(0, 1);
-		array.erase(array.size() - 1, 1);
-
-		istringstream intstr(array);
-
-		int a;
-		while (intstr >> a) {
-			cout <<"1"<< a << endl;
-			que.push_back(a);
-		}
-		int size = command.length();
-		int check = 0;
-
-		for (int j = 0; j < size; j++) {
-			if (command[j] == 'R') {
-				if (check == 0) check = 1;
-				else check = 0;
-			}
-			else {
-				if (que.empty()) {
-					answer.push_back("error");
-					break;
-				}
-				else
-					pop(check, que);
-			}
-		}
-		if (!que.empty()) {
-			string str = "[";
-			string token = ",";
-
-			if (check == 0) {
-				for (int k = 0; k < que.size()-1; k++) {
-					str += to_string(que[k]) + token;
-				}
-				str += to_string(que.back()) + "]";
-			}
-			else {
-				for (int k = que.size() - 1; k >= 0; k--) {
-					str += to_string(que[k]) + token;
-				}
-				str += to_string(que.front()) + "]";
-			}
-
-			cout << str << endl;
-
-			answer.push_back(str);
-		}
-		que.clear();
-	}
-
-	for (int i = 0; i < T; i++) {
-		cout << answer[i] << "\n";
-	}
-
-}
+//#include <iostream>
+//#include <deque>
+//#include <algorithm>
+//#include <sstream>
+//#include <vector>
+//#include <string>
+//using namespace std;
+//
+//deque<int> que;
+//
+//void pop(int check, deque<int>que){
+//	if (check) {
+//		que.pop_back();
+//	}
+//	else {
+//		que.pop_front();
+//	}
+//
+//}
+//
+//int main() {
+//	ios_base::sync_with_stdio(false);
+//	cin.tie(NULL); cout.tie(NULL);
+//	
+//	int T; cin >> T;
+//
+//	vector<string> answer(T);
+//
+//	for (int i = 0; i < T; i++) {
+//		string command, array;		
+//		int n;
+//
+//		cin >> command; 
+//		cin >> n; 
+//		cin >> array;
+//
+//		array.erase(0, 1);
+//		array.erase(array.size() - 1, 1);
+//
+//		istringstream intstr(array);
+//
+//		int a;
+//		while (intstr >> a) {
+//			cout <<"1"<< a << endl;
+//			que.push_back(a);
+//		}
+//		int size = command.length();
+//		int check = 0;
+//
+//		for (int j = 0; j < size; j++) {
+//			if (command[j] == 'R') {
+//				if (check == 0) check = 1;
+//				else check = 0;
+//			}
+//			else {
+//				if (que.empty()) {
+//					answer.push_back("error");
+//					break;
+//				}
+//				else
+//					pop(check, que);
+//			}
+//		}
+//		if (!que.empty()) {
+//			string str = "[";
+//			string token = ",";
+//
+//			if (check == 0) {
+//				for (int k = 0; k < que.size()-1; k++) {
+//					str += to_string(que[k]) + token;
+//				}
+//				str += to_string(que.back()) + "]";
+//			}
+//			else {
+//				for (int k = que.size() - 1; k >= 0; k--) {
+//					str += to_string(que[k]) + token;
+//				}
+//				str += to_string(que.front()) + "]";
+//			}
+//
+//			cout << str << endl;
+//
+//			answer.push_back(str);
+//		}
+//		que.clear();
+//	}
+//
+//	for (int i = 0; i < T; i++) {
+//		cout << answer[i] << "\n";
+//	}
+//
+//}
