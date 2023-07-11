@@ -42,27 +42,29 @@
 //	return 0;
 //}
 
-#include <iostream>
-#include <string>
-#include <vector>
-
-using namespace std;
-
-int main() {
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL);
-	string answer[2] = { "YES","NO" };
-
-
-	int n, m, k; cin >> n >> m >> k;
-	vector<int>bridge(n,0);
-	vector<int, vector<int>>island(n, vector<int>(n, 0));
-
-	for (int i = 0; i < m; i++) {
-		int a, b; 
-		cin >> a >> b;
-		island[a][b] = 1;
-
-	}
-	return 0;
-}
+//#include <iostream>
+//#include <string>
+//#include <vector>
+//
+//using namespace std;
+//
+//int main() {
+//	ios_base::sync_with_stdio(false);
+//	cin.tie(NULL);
+//	string answer[2] = { "YES","NO" };
+//
+//
+//	int n, m, k; cin >> n >> m >> k;
+//	vector<int>bridge(n,0);
+//	vector<vector<int>>island(n, vector<int>(n, 0));
+//
+//	for (int i = 0; i < m; i++) {
+//		int a, b; 
+//		cin >> a >> b;
+//		island[a][b] = 1;
+//		island[b][a] = 1;
+//	}
+//
+//
+//	return 0;
+//}
