@@ -75,38 +75,29 @@
 //    return { result.first, result.second };
 //}
 
-#include <string>
-#include <vector>
-#include <queue>
-#include <functional>
-#include <algorithm>
-#include<iostream>
-using namespace std;
-
-bool check(string a, string b) {
-    if (a[0] == b[0])
-        return a.length() < b.length();
-    return a > b;
-}
-
-string solution(vector<int> numbers) {
-    string answer = "";
-    vector<string> str;
-    int size = numbers.size();
-    for (int i = 0; i < size; i++) {
-        str.push_back(to_string(numbers[i]));
-    }
-    sort(str.begin(), str.end(), check);
-
-    for (int i = 0; i < size; i++) {
-        cout << str[i] << "  ";
-        answer += str[i];
-    }
-    return answer;
-}
-
-
-int main() {
-    vector<int>v = { 3, 30, 34, 5, 9,10,11,1 };
-    solution(v);
-}
+//#include <string>
+//#include <vector>
+//#include <queue>
+//#include <functional>
+//#include <algorithm>
+//#include<iostream>
+//using namespace std;
+//
+//bool check(string a, string b) {
+//    return a+b > b+b;
+//}
+//
+//string solution(vector<int> numbers) {
+//    string answer = "";
+//    vector<string> str;
+//    int size = numbers.size();
+//    for (int i = 0; i < size; i++) {
+//        str.push_back(to_string(numbers[i]));
+//    }
+//    sort(str.begin(), str.end(), check);
+//
+//    if (str.at(0) == "0") return "0";
+//    for (auto num : str)
+//        answer += num;
+//    return answer;
+//}
