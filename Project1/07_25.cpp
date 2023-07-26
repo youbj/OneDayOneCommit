@@ -121,55 +121,47 @@
 //    return answer;
 //}
 
-#include <string>
-#include <vector>
-
-using namespace std;
-
-int solution(int n) {
-    int check = 0;
-    vector<bool> isPrime(n + 1, true); 
-
-    isPrime[0] = isPrime[1] = false; 
-
-    for (int i = 2; i * i <= n; i++) {
-        if (isPrime[i]) {
-            for (int j = i * i; j <= n; j += i) {
-                isPrime[j] = false;
-            }
-        }
-    }
-
-    for (int i = 2; i <= n; i++) {
-        if (!isPrime[i]) {
-            ++check;
-        }
-    }
-    return check;
-
-}
-
-
-#include <iostream>
-
-int main() {
-    cout << solution(10);
-}
-
-
 //#include <string>
+//#include <vector>
+//
+//using namespace std;
+//
+//int solution(int n) {
+//    int check = 0;
+//    vector<bool> isPrime(n + 1, true); 
+//
+//    isPrime[0] = isPrime[1] = false; 
+//
+//    for (int i = 2; i * i <= n; i++) {
+//        if (isPrime[i]) {
+//            for (int j = i * i; j <= n; j += i) {
+//                isPrime[j] = false;
+//            }
+//        }
+//    }
+//
+//    for (int i = 2; i <= n; i++) {
+//        if (!isPrime[i]) {
+//            ++check;
+//        }
+//    }
+//    return check;
+//
+//}
+
+
+
 //#include <vector>
 //#include <cmath>
 //using namespace std;
 //
-//double check_sqrt(vector<int>v1, vector<int>v2) {
-//    double distance = sqrt((v2.front() - v1.front()) * (v2.front() - v1.front()) + (v2.back() - v1.back()) * (v2.back() - v1.back()));
+//int calc_distance(vector<int>& v1, vector<int>& v2) {
+//    int distance = sqrt(pow(v2[0] - v1[0], 2) + pow(v2[1] - v1[1], 2));
 //    return distance;
 //}
 //
 //int solution(vector<vector<int>> dots) {
-//    double x = check_sqrt(dots[0], dots[1]);
-//    double y= check_sqrt(dots[2], dots[3]);
-//    int answer = x * y;
-//    return x*y;
+//    int x = calc_distance(dots[0], dots[1]); 
+//    int y = calc_distance(dots[1], dots[2]); 
+//    return x * y;
 //}
