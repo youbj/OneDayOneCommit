@@ -204,26 +204,64 @@
 //    return answer;
 //}
 
-#include <string>
-#include <vector>
-#include <queue>
-using namespace std;
+//#include <string>
+//#include <vector>
+//#include <queue>
+//using namespace std;
+//
+//int solution(vector<int> numbers, int k) {
+//    int answer = 0;
+//    queue<int>que;
+//
+//    for (int i = 0; i < numbers.size(); i++) {
+//        que.push(numbers[i]);
+//    }
+//
+//    while (k>0) {
+//        que.push(que.front());
+//        que.pop();
+//        que.push(que.front());
+//        que.pop();
+//        k--;
+//    }
+//    answer = que.front();
+//    return answer;
+//}
 
-int solution(vector<int> numbers, int k) {
-    int answer = 0;
-    queue<int>que;
+/*금과 은 운반*/
+//#include <string>
+//#include <vector>
+//
+//using namespace std;
+//
+//long long solution(int a, int b, vector<int> g, vector<int> s, vector<int> w, vector<int> t) {
+//    long long answer = 0;
+//    int size = g.size();
+//    long long count = 1;
+//    for (int n = 0; n < size; n++) {
+//        // a(금)
+//        if (g[n] < w[n]) { // 적재량 > 도시에 존재하는 수량
+//            if (a < g[n]) {
+//                ++answer;
+//                a = -1;
+//            }
+//            else { // 1. a가 g[n]보다 크고 w[n]보다 작을 경우 -> g[n]과 s[n]을 함께 가능 -> s[n]이 적재량보다 적게남았을 경우와 아닌 경우
+//                a -= g[n];
+//
+//                if (w[n] - g[n] > s[n]) {
+//                    b -= s[n];
+//                }
+//                else {
+//                    s[n] -= w[n] - g[n];
+//                    b -= w[n] - g[n];
+//                }              
+//                answer += 2;
+//            }          
+//        }
+//        else { // 도시에 존재하는 수량> 적재량
+//
+//        }
+//    }
+//    return answer;
+//}
 
-    for (int i = 0; i < numbers.size(); i++) {
-        que.push(numbers[i]);
-    }
-
-    while (k>0) {
-        que.push(que.front());
-        que.pop();
-        que.push(que.front());
-        que.pop();
-        k--;
-    }
-    answer = que.front();
-    return answer;
-}
