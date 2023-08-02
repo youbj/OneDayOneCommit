@@ -158,6 +158,7 @@
     <ClCompile Include="07_28.cpp" />
     <ClCompile Include="07_31.cpp" />
     <ClCompile Include="08_01.cpp" />
+    <ClCompile Include="08_02.cpp" />
     <ClCompile Include="1.23.cpp" />
     <ClCompile Include="1.27.cpp" />
     <ClCompile Include="2022_09_22.cpp" />

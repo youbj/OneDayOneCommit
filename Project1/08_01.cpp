@@ -1,34 +1,43 @@
-/*임국심사*/
-
-#include <string>
-#include <vector>
-#include <iostream>
-#include <algorithm>
-#include <queue>
-#include <functional>
-using namespace std;
-
-long long solution(int n, vector<int> times) {
-    long long answer = 0;
-    int num = 1;
-    priority_queue<long long int, vector<long long int>, greater<>>que;
-    for (int i = 0; i < times.size(); i++) {
-        que.push(times[i]);
-    }
-    int count = 2;
-    while (num <= n) {
-        cout << que.top() << endl;
-        que.push(que.top() * count);
-        que.pop();
-        ++num;
-    }
-
-    return que.top();
-}
-
-int main() {
-    cout << solution(6, { 7,10 });
-}
+///*임국심사*/
+//
+//#include <string>
+//#include <vector>
+//#include <iostream>
+//#include <algorithm>
+//#include <queue>
+//#include <functional>
+//#include <map>
+//using namespace std;
+//
+//long long solution(int n, vector<int> times) {
+//    long long answer = 0;
+//    int num = 1;
+//    priority_queue<long long int, vector<long long int>, greater<>>que;
+//
+//
+//    for (int i = 0; i < times.size(); i++) {
+//        que.push(times[i]);
+//    }
+//    while (1) {
+//        if (que.size() >= n)
+//            break;
+//
+//    }
+//    sort(times.begin(), times.end());
+//    int count = 2;
+//    while (num <= n) {
+//        cout << que.top() << endl;
+//        que.push(que.top() * count);
+//        que.pop();
+//        ++num;
+//    }
+//
+//    return que.top();
+//}
+//
+//int main() {
+//    cout << solution(6, { 7,10 });
+//}
 
 
 ///*정수 삼각형*/
