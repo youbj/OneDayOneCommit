@@ -97,28 +97,22 @@
 //    return answer;
 //}
 
-#include <vector>
-
-using namespace std;
-
-int solution(int n) {
-    vector<int> coins = { 1, 2, 5, 10, 20, 50, 100, 500 };
-    int dp[100001] = { 0 };
-    dp[0] = 1;
-
-    for (int coin : coins) {
-        for (int i = coin; i <= n; i++) {
-            dp[i] += dp[i - coin];
-        }
-    }
-
-    return dp[n];
-}
-
-#include <iostream>
-int main() {
-    int n = 5;
-    int answer = solution(n);
-    cout << "거스름돈 지불 방법의 수: " << answer << endl;
-    return 0;
-}
+//#include <vector>
+//#include <string>
+//#include <algorithm>
+//
+//using namespace std;
+//
+//int solution(int n, vector<int> money) {
+//    sort(money.begin(), money.end());
+//    int dp[100001] = { 0 };
+//    dp[0] = 1;
+//
+//    for (int coin : money) {
+//        for (int i = coin; i <= n; i++) {
+//            dp[i] += dp[i - coin];
+//        }
+//    }
+//
+//    return dp[n];
+//}
