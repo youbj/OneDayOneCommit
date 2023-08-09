@@ -354,5 +354,8 @@
     <ClCompile Include="08_07.cpp">
       <Filter>소스 파일\2023\2023/8</Filter>
     </ClCompile>
+    <ClCompile Include="08_09.cpp">
+      <Filter>소스 파일\2023\2023/8</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

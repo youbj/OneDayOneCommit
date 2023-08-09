@@ -162,6 +162,7 @@
     <ClCompile Include="08_03.cpp" />
     <ClCompile Include="08_04.cpp" />
     <ClCompile Include="08_07.cpp" />
+    <ClCompile Include="08_09.cpp" />
     <ClCompile Include="1.23.cpp" />
     <ClCompile Include="1.27.cpp" />
     <ClCompile Include="2022_09_22.cpp" />
