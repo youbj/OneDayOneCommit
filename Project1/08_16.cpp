@@ -56,87 +56,65 @@
 //}
 
 
+/*소수찾기*/
 
-#include <string>
-#include <vector>
-#include <iostream>
-#include <unordered_set>
-#include <algorithm>
-using namespace std;
+//#include <iostream>
+//#include <string>
+//#include <set>
+//#include <cmath>
+//
+//using namespace std;
+//
+//set<int> numberSet;
+//
+//bool isPrime(int number)
+//{
+//    if (number == 0 || number == 1)
+//        return false;
+//
+//    int lim = sqrt(number);
+//    for (int i = 2; i <= lim; i++)
+//        if (number % i == 0)
+//            return false;
+//
+//    return true;
+//}
+//
+//void makeCombination(string comb, string others)
+//{
+//    if (comb != "")
+//        numberSet.insert(stoi(comb));
+//
+//    for (int i = 0; i < others.size(); i++)
+//        makeCombination(comb + others[i], others.substr(0, i) + others.substr(i + 1));
+//}
+//
+//int solution(string numbers)
+//{
+//    makeCombination("", numbers);
+//
+//    int answer = 0;
+//    for (int number : numberSet)
+//        if (isPrime(number))
+//            answer++;
+//
+//    return answer;
+//}
 
-void generateCombinations(const string& input, string current, int index, vector<string>& v) {
-    if (index == input.length()) {
-        v.push_back(current);
-        return;
-    }
-
-    generateCombinations(input, current, index + 1,v);
-
-    generateCombinations(input, current + input[index], index + 1,v);
-}
-
-void push(vector<string>& v, string str) {
-    int size = v.size();
-    v.push_back(str);
-    vector<string> st;
-    for (int i = 0; i < size; i++) {
-        st.push_back(v[i] + str);
-        st.push_back(str + v[i]);
-    }
-    v.insert(v.end(), st.begin(), st.end());
-}
-
-void sspd(int n, vector<bool>& isPrime) {
-
-    isPrime[0] = isPrime[1] = false;
-
-    for (int i = 2; i * i <= n; i++) {
-        if (isPrime[i]) {
-            for (int j = i * i; j <= n; j += i) {
-                isPrime[j] = false;
-            }
-        }
-    }
-}
-
-int solution(string numbers) {
-    int answer = 0;
-    vector<string>str;
-
-    for (int i = 0; i < numbers.length(); i++) {
-        string s;
-        s.push_back(numbers[i]);
-        push(str, s);
-    }
-
-    vector<int>v;
-    unordered_set<int> unique;
-
-    for (auto k : str) {
-        int num = stoi(k);
-
-        if (unique.find(num) == unique.end()) {
-            unique.insert(num);
-            v.push_back(num);
-        }
-    }
-    if (v.front() == 0 && v.size() == 1) return 0;
-
-    for (int i = 0; i < v.size(); i++) {
-        cout << v[i] << "  ";
-    }
-
-    sort(v.begin(), v.end());
-    vector<bool> isPrime(v.back() + 1, true);
-    sspd(v.back(), isPrime);
-
-    for (int i = 0; i < v.size(); i++) {
-        if (isPrime[v[i]])
-            answer++;
-    }
-    return answer;
-}
-
-int main() {
-    solution("143");
-}
+/*구명보트*/
+//#include <string>
+//#include <vector>
+//#include <algorithm>
+//using namespace std;
+//
+//int solution(vector<int> people, int limit) {
+//    int answer = 0;
+//    long long int sum = 0;
+//    for (int i = 0; i < people.size(); i++) {
+//        sum += people[i];
+//    }
+//    answer += sum / limit;
+//    if (sum % limit > 0)
+//        ++answer;
+//    return answer;
+//}
