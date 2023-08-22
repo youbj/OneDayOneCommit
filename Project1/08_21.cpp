@@ -200,61 +200,61 @@ using namespace std;
 
 /*숫자 변환하기*/
 
-#include <string>
-#include <vector>
-
-using namespace std;
-int count = 0;
-
-int cal_vec(vector<int>& v,int n,int y, int count) {
-    ++count;
-    vector<int>buf;
-    int check = 0;
-    for (int i = 0; i < v.size(); i++) {
-        if (v[i] + n <= y) {
-            check = 1;
-            buf.push_back(v[i] + n);
-            if (v[i] + n == y){
-                check = 2;
-                break;
-            }
-        }
-        if (v[i] * 2 <= y) {
-            check = 1;
-            buf.push_back(v[i] * 2);
-            if (v[i]*2 == y){
-                check = 2;
-                break;
-            }
-        }
-            
-        if (v[i] * 3 <= y) {
-            check = 1;
-            buf.push_back(v[i] * 3);
-            if (v[i] * 3 == y) {
-                check = 2;
-                break;
-            }
-        }
-                
-    }
-    if (check == 0)
-        return -1;
-    else if (check == 1)
-        return cal_vec(buf, n, y, count);
-    else
-        return count;
-    
-}
-int solution(int x, int y, int n) {
-    int answer = 0;
-    vector <int>v;
-    v.push_back(x);
-    int k = cal_vec(v, n, y, answer);
-
-    return k;
-}
-
-int main() {
-    cout<<solution(2, 5, 4);
-}
+//#include <string>
+//#include <vector>
+//
+//using namespace std;
+//int count = 0;
+//
+//int cal_vec(vector<int>& v,int n,int y, int count) {
+//    ++count;
+//    vector<int>buf;
+//    int check = 0;
+//    for (int i = 0; i < v.size(); i++) {
+//        if (v[i] + n <= y) {
+//            check = 1;
+//            buf.push_back(v[i] + n);
+//            if (v[i] + n == y){
+//                check = 2;
+//                break;
+//            }
+//        }
+//        if (v[i] * 2 <= y) {
+//            check = 1;
+//            buf.push_back(v[i] * 2);
+//            if (v[i]*2 == y){
+//                check = 2;
+//                break;
+//            }
+//        }
+//            
+//        if (v[i] * 3 <= y) {
+//            check = 1;
+//            buf.push_back(v[i] * 3);
+//            if (v[i] * 3 == y) {
+//                check = 2;
+//                break;
+//            }
+//        }
+//                
+//    }
+//    if (check == 0)
+//        return -1;
+//    else if (check == 1)
+//        return cal_vec(buf, n, y, count);
+//    else
+//        return count;
+//    
+//}
+//int solution(int x, int y, int n) {
+//    int answer = 0;
+//    vector <int>v;
+//    v.push_back(x);
+//    int k = cal_vec(v, n, y, answer);
+//
+//    return k;
+//}
+//
+//int main() {
+//    cout<<solution(2, 5, 4);
+//}
