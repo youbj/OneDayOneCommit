@@ -204,7 +204,6 @@ using namespace std;
 //#include <vector>
 //
 //using namespace std;
-//int count = 0;
 //
 //int cal_vec(vector<int>& v,int n,int y, int count) {
 //    ++count;

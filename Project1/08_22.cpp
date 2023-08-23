@@ -53,42 +53,40 @@
 //
 //    return answer;
 //}
-#include<iostream>
-#include <string>
-#include <vector>
 
-using namespace std;
 
-int solution(int storey) {
-    int answer = 0;
-    while (storey != 0) {
-        if (storey % 10 == 0) {
-            storey /= 10;
-        }
-
-        if (storey % 10 > 5) {
-            int n = 10-(storey % 10);
-            storey += n;
-            answer += n;
-        }
-        else {
-            int n = storey % 10;
-            storey -= n;
-            string st = to_string(storey);
-            if (st[0] == '9') {
-                storey += (2 * n);
-            }
-            answer += n;
-        }
-
-        if (storey / 10 == 0) {
-            answer += storey;
-            break;
-        }
-    }
-    return answer;
-}
-
-int main() {
-  cout<< solution(950);
-}
+//#include<iostream>
+//#include <string>
+//#include <vector>
+//
+//using namespace std;
+//
+//int solution(int storey) {
+//    int answer = 0;
+//    while (storey != 0) {
+//        if (storey % 10 == 0) {
+//            storey /= 10;
+//        }
+//
+//        if (storey % 10 > 5) {
+//            int n = 10-(storey % 10);
+//            storey += n;
+//            answer += n;
+//        }
+//        else {
+//            int n = storey % 10;
+//            storey -= n;
+//            string st = to_string(storey);
+//            if (st[0] == '9') {
+//                storey += (2 * n);
+//            }
+//            answer += n;
+//        }
+//
+//        if (storey / 10 == 0) {
+//            answer += storey;
+//            break;
+//        }
+//    }
+//    return answer;
+//}
