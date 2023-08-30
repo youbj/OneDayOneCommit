@@ -26,30 +26,3 @@
 //    return answer;
 //}
 
-#include <string>
-#include <vector>
-#include <queue>
-#include <functional>
-using namespace std;
-
-int solution(int n, vector<int> cores) {
-    int answer = 0;
-    int size = n - cores.size();
-    priority_queue<pair<int, int>, pair<int, int>, greater<>>que;
-    for (int i = 0; i < cores.size(); i++)
-        que.push(make_pair(1, cores[i]));
-    pair<int, int>pa;
-    for (int i = 0; i < n; i++) {
-        pa = que.top();
-        que.pop();
-        ++pa.first;
-        que.push(pa);
-    }
-    return pa.second;
-}
-
-#include <iostream>
-
-int main() {
-    cout<<solution(6, { 1,2,3 });
-}
