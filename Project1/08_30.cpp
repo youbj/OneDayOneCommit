@@ -132,71 +132,73 @@
 //	return 0;
 //}
 
-#include <string>
-#include <vector>
-#include <iostream>
-using namespace std;
-int count_X(int& x_count, int y_count, char x, vector<vector<bool>>&is_first) {
-    if (x_count < 0 || x_count>10)
-        return 0;
-
-    if (x == 'D') {
-        --x_count;
-    }
-    else {
-        ++x_count;
-    }
-    if (is_first[x_count][y_count] == true)
-        return 0;
-    is_first[x_count][y_count] = true;
-    return 1;
-}
-int count_Y(int x_count, int& y_count, char x, vector<vector<bool>>&is_first) {
-    if (y_count < 0 || y_count>10 )
-        return 0;
-
-    if (x == 'L') {
-        --y_count;
-        
-    }
-    else {
-        ++y_count;
-    }
-    if (is_first[x_count][y_count] == true)
-        return 0;
-    is_first[x_count][y_count] = true;
-    return 1;
-}
-int solution(string dirs) {
-    int answer = 0;
-    int x_count = 5;
-    int y_count = 5;
-    vector<vector<bool>>is_first(11, vector<bool>(11, false));
-
-    for (int i = 0; i < dirs.length(); i++) {
-        switch (dirs[i]) {
-        case 'U':
-            answer += count_X(x_count, y_count,dirs[i], is_first);
-            cout <<i << "  x_count: " << x_count << "  y_count: " << y_count << endl;
-            break;
-        case 'D':
-            answer += count_X(x_count, y_count,dirs[i], is_first);
-            cout << i << "  x_count: " << x_count << "  y_count: " << y_count << endl;
-            break;
-        case 'L':
-            answer += count_Y(x_count, y_count, dirs[i], is_first);
-            cout << i << "  x_count: " << x_count << "  y_count: " << y_count << endl;
-            break;
-        case 'R':
-            answer += count_Y(x_count, y_count, dirs[i], is_first);
-            cout << i << "  x_count: " << x_count << "  y_count: " << y_count << endl;
-            break;
-        }
-    }
-    return answer;
-}
-
-
-int main() {
-    cout << solution("ULURRDLLU");
-}
+//#include <string>
+//#include <vector>
+//#include <iostream>
+//using namespace std;
+//int count_X(int& x_count, int y_count, char x, vector<vector<bool>>&is_first) {
+//    if (x_count < 0 || x_count>10)
+//        return 0;
+//
+//    if (x == 'D') {
+//        --x_count;
+//    }
+//    else {
+//        ++x_count;
+//    }
+//    if (is_first[x_count][y_count] == true)
+//        return 0;
+//    is_first[x_count][y_count] = true;
+//    return 1;
+//}
+//int count_Y(int x_count, int& y_count, char x, vector<vector<bool>>&is_first) {
+//    if (y_count < 0 || y_count>10 )
+//        return 0;
+//
+//    if (x == 'L') {
+//        --y_count;
+//        
+//    }
+//    else {
+//        ++y_count;
+//    }
+//
+//    if (is_first[x_count][y_count] == true)
+//        return 0;
+//
+//    is_first[x_count][y_count] = true;
+//    return 1;
+//}
+//int solution(string dirs) {
+//    int answer = 0;
+//    int x_count = 5;
+//    int y_count = 5;
+//    vector<vector<bool>>is_first(11, vector<bool>(11, false));
+//
+//    for (int i = 0; i < dirs.length(); i++) {
+//        switch (dirs[i]) {
+//        case 'U':
+//            answer += count_X(x_count, y_count,dirs[i], is_first);
+//            cout <<i << "  x_count: " << x_count << "  y_count: " << y_count << endl;
+//            break;
+//        case 'D':
+//            answer += count_X(x_count, y_count,dirs[i], is_first);
+//            cout << i << "  x_count: " << x_count << "  y_count: " << y_count << endl;
+//            break;
+//        case 'L':
+//            answer += count_Y(x_count, y_count, dirs[i], is_first);
+//            cout << i << "  x_count: " << x_count << "  y_count: " << y_count << endl;
+//            break;
+//        case 'R':
+//            answer += count_Y(x_count, y_count, dirs[i], is_first);
+//            cout << i << "  x_count: " << x_count << "  y_count: " << y_count << endl;
+//            break;
+//        }
+//    }
+//    return answer;
+//}
+//
+//
+//int main() {
+//    cout << solution("ULURRDLLU");
+//}
