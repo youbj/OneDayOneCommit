@@ -127,35 +127,27 @@
 //    solution("100-200*300-500+20");
 //}
 
-#include <string>
-#include <vector>
-#include <iostream>
-using namespace std;
-
-int solution(vector<int> numbers, int target) {
-    int answer = 0;
-    vector<int> num;
-    num.push_back(numbers[0]);
-    num.push_back(numbers[0]*-1);
-    for (int i = 1; i < numbers.size(); i++) {
-        vector<int>v;
-        for (int j = 0; j < num.size(); j++) {
-            v.push_back(num[j] + numbers[i]);
-            if (num[j] - numbers[i] < 0)
-                continue;
-            v.push_back(num[j] - numbers[i]);
-        }
-        num = v;
-        v.clear();
-    }
-    for (auto i : num) {
-        cout << i << " ";
-        if (i == target)
-            ++answer;
-    }
-    return answer;
-}
-
-int main() {
-    solution({ 1,1,1,1,1 }, 3);
-}
+//#include <vector>
+//using namespace std;
+//
+//int answer = 0;
+//
+//void target_num(vector<int> numbers, int target, int sum, int index) {
+//
+//    if (index == numbers.size()) {
+//        if (sum == target) {
+//            answer++;
+//        }
+//        return;
+//    }
+//    target_num(numbers, target, sum + numbers[index], index + 1);
+//    target_num(numbers, target, sum - numbers[index], index + 1);
+//
+//
+//}
+//
+//int solution(vector<int> numbers, int target) {
+//    target_num(numbers, target, 0, 0);
+//
+//    return answer;
+//}
