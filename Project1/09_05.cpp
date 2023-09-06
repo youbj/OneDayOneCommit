@@ -1,3 +1,5 @@
+/*게임 맵 최단거리*/
+
 //#include<vector>
 //#include <string>
 //#include <queue>
@@ -40,64 +42,50 @@
 //    return answer;
 //}
 
-#include <iostream>
-#include <string>
-#include <vector>
-#include <map>
-#include <algorithm>
+/*카카오- 3중 압축*/
 
-using namespace std;
-bool cond(pair<string, int>a, pair<string, int>b) {
-    return a.second < b.second;
-}
-vector<int> solution(string msg) {
-    vector<int> answer;
-    map<string, int>dict;
-    string c = "A";
-    int n = 1;
-    for (n; n<=26; n++) {
-        dict.insert({ c,n });
-        c[0]++;
-    }
-
-    int check=0;
-    string str(1,msg[0]);
-
-    for (int i = 1; i < msg.length(); i++) {
-        string s(1,msg[i]);
-        cout << "str: " << str << "  s: " << s << endl;
-        if (dict.find(str + s) != dict.end()) {
-            str += s;
-            cout << "찾음:  " << str << endl;
-            //answer.push_back(dict[str]);
-        }
-        else {
-            cout << "입력:  " << dict[str] << endl;
-            answer.push_back(dict[str]);       
-            dict.insert({str+s,n});
-            ++n; str = s;
-            
-        }
-    }
-     answer.push_back(dict[str]);
-
-    vector<pair<string,int>>v;
-    for (auto& pa : dict) {
-        v.push_back(make_pair(pa.first, pa.second));
-    }
-    sort(v.begin(), v.end(), cond);
-
-    for (auto& pa : v) {
-        cout << pa.first << "  |  " << pa.second << endl;
-    }
-    return answer;
-}
-
-int main() {
-    
-    vector<int>v(solution("TOBEORNOTTOBEORTOBEORNOT"));
-
-    for (int i = 0; i < v.size(); i++) {
-        cout << v[i] << " ";
-    }
-}
+//#include <iostream>
+//#include <string>
+//#include <vector>
+//#include <map>
+//
+//using namespace std;
+//
+//vector<int> solution(string msg) {
+//    vector<int> answer;
+//    map<string, int>dict;
+//    string c = "A";
+//    int n = 1;
+//    for (n; n<=26; n++) {
+//        dict.insert({ c,n });
+//        c[0]++;
+//    }
+//
+//    int check=0;
+//    string str(1,msg[0]);
+//
+//    for (int i = 1; i < msg.length(); i++) {
+//        string s(1,msg[i]);
+//        if (dict.find(str + s) != dict.end()) {
+//            str += s;
+//        }
+//        else {
+//            answer.push_back(dict[str]);       
+//            dict.insert({str+s,n});
+//            ++n; str = s;
+//            
+//        }
+//    }
+//    answer.push_back(dict[str]);
+//
+//    return answer;
+//}
+//
+//int main() {
+//    
+//    vector<int>v(solution("TOBEORNOTTOBEORTOBEORNOT"));
+//
+//    for (int i = 0; i < v.size(); i++) {
+//        cout << v[i] << " ";
+//    }
+//}
