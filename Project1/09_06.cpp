@@ -110,7 +110,6 @@
 //}
 
 /*프로세스*/
-#include <iostream>
 
 //#include <vector>
 //#include <string>
@@ -150,55 +149,47 @@
 //    return answer;
 //}
 
-#include <vector>
-#include <queue>
+//#include <vector>
+//#include <queue>
+//
+//using namespace std;
+//
+//int solution(vector<int> priorities, int location) {
+//    int answer = 0;
+//    int size = priorities.size();
+//    queue<pair<int, int>> que;
+//
+//    for (int i = 0; i < size; i++) {
+//        que.push({ priorities[i], i });
+//    }
+//
+//    while (!que.empty()) {
+//        int currentPriority = que.front().first;
+//        int currentIndex = que.front().second;
+//        que.pop();
+//
+//        bool highPriorityExists = false;
+//
+//        queue<pair<int, int>> temp(que); 
+//        while (!temp.empty()) {
+//            if (temp.front().first > currentPriority) {
+//                highPriorityExists = true;
+//                break;
+//            }
+//            temp.pop();
+//        }
+//
+//        if (highPriorityExists) {
+//            que.push({ currentPriority, currentIndex });
+//        }
+//        else {
+//            answer++;
+//            if (currentIndex == location) {
+//                return answer;
+//            }
+//        }
+//    }
+//
+//    return answer;
+//}
 
-using namespace std;
-
-int solution(vector<int> priorities, int location) {
-    int answer = 0;
-    int size = priorities.size();
-    queue<pair<int, int>> que;
-
-    for (int i = 0; i < size; i++) {
-        que.push({ priorities[i], i });
-    }
-
-    while (!que.empty()) {
-        int currentPriority = que.front().first;
-        int currentIndex = que.front().second;
-        que.pop();
-
-        bool highPriorityExists = false;
-
-        // 높은 우선 순위가 있는지 확인
-        queue<pair<int, int>> temp(que);  // 큐를 복사하여 임시로 사용
-        while (!temp.empty()) {
-            if (temp.front().first > currentPriority) {
-                highPriorityExists = true;
-                break;
-            }
-            temp.pop();
-        }
-
-        if (highPriorityExists) {
-            // 높은 우선 순위가 있다면 다시 큐에 넣음
-            que.push({ currentPriority, currentIndex });
-        }
-        else {
-            // 높은 우선 순위가 없다면 실행
-            answer++;
-            if (currentIndex == location) {
-                return answer;
-            }
-        }
-    }
-
-    return answer;
-}
-
-
-
-int main() {
-    cout<<solution({ 3,3,4,2 }, 3);
-}

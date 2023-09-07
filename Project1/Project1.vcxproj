@@ -176,6 +176,7 @@
     <ClCompile Include="09_04.cpp" />
     <ClCompile Include="09_05.cpp" />
     <ClCompile Include="09_06.cpp" />
+    <ClCompile Include="09_07.cpp" />
     <ClCompile Include="1.23.cpp" />
     <ClCompile Include="1.27.cpp" />
     <ClCompile Include="2022_09_22.cpp" />
