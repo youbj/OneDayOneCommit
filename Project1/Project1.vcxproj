@@ -179,8 +179,17 @@
     <ClCompile Include="09_07.cpp" />
     <ClCompile Include="09_08.cpp" />
     <ClCompile Include="09_11.cpp" />
+    <ClCompile Include="09_15.cpp" />
+    <ClCompile Include="09_18.cpp" />
+    <ClCompile Include="09_27.cpp" />
     <ClCompile Include="1.23.cpp" />
     <ClCompile Include="1.27.cpp" />
+    <ClCompile Include="10_10.cpp" />
+    <ClCompile Include="10_20.cpp" />
+    <ClCompile Include="10_21.cpp" />
+    <ClCompile Include="10_22.cpp" />
+    <ClCompile Include="10_24.cpp" />
+    <ClCompile Include="11_06.cpp" />
     <ClCompile Include="2022_09_22.cpp" />
     <ClCompile Include="22_08_26.cpp" />
     <ClCompile Include="22.01.21.cpp" />

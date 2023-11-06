@@ -61,6 +61,12 @@
     <Filter Include="소스 파일\2023\2023/9">
       <UniqueIdentifier>{0bec15f7-7a36-4876-8c22-9878314f91a3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\2023\2023/10">
+      <UniqueIdentifier>{b608d678-fd73-4b9e-b242-f8f854e15615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\2023\2023/11">
+      <UniqueIdentifier>{4e33ac06-e524-4b77-9f53-6b588888d767}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="22.01.21.cpp">
@@ -407,6 +413,33 @@
     </ClCompile>
     <ClCompile Include="09_11.cpp">
       <Filter>소스 파일\2023\2023/9</Filter>
+    </ClCompile>
+    <ClCompile Include="09_15.cpp">
+      <Filter>소스 파일\2023\2023/9</Filter>
+    </ClCompile>
+    <ClCompile Include="09_18.cpp">
+      <Filter>소스 파일\2023\2023/9</Filter>
+    </ClCompile>
+    <ClCompile Include="09_27.cpp">
+      <Filter>소스 파일\2023\2023/9</Filter>
+    </ClCompile>
+    <ClCompile Include="10_10.cpp">
+      <Filter>소스 파일\2023\2023/10</Filter>
+    </ClCompile>
+    <ClCompile Include="10_20.cpp">
+      <Filter>소스 파일\2023\2023/10</Filter>
+    </ClCompile>
+    <ClCompile Include="10_21.cpp">
+      <Filter>소스 파일\2023\2023/10</Filter>
+    </ClCompile>
+    <ClCompile Include="10_22.cpp">
+      <Filter>소스 파일\2023\2023/10</Filter>
+    </ClCompile>
+    <ClCompile Include="10_24.cpp">
+      <Filter>소스 파일\2023\2023/10</Filter>
+    </ClCompile>
+    <ClCompile Include="11_06.cpp">
+      <Filter>소스 파일\2023\2023/11</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

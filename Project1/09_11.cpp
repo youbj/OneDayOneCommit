@@ -96,63 +96,63 @@
 //    solution("{{1,2,3},{2,1},{1,2,4,3},{2}}");
 //}
 
-#include <string>
-#include <vector>
-#include <queue>
-#include <functional>
-using namespace std;
-
-vector<bool>visited;
-vector<vector<int>>graph;
-vector<int>path;
-priority_queue<int, vector<int>, greater<>>path_count;
-
-
-void dfs(int x ) {
-    visited[x] = true;
-    path.push_back(x);
-
-    if (x == 1) {
-        cout << path.size()<<endl;
-        path_count.push(path.size());
-    }
-    
-    for (int node : graph[x]) {
-        if (!visited[node]) {
-            dfs(node);
-        }
-    }
-    path.pop_back();
-    visited[x] = false;
-}
-
-int solution(int n, vector<vector<int>> edge) {
-    int answer = 0;
-    visited.resize(n+1, false);
-    graph.resize(n + 1);
-
-    for (auto &pair : edge) {
-        int x = pair[0];
-        int y = pair[1];
-        graph[x].push_back(y);
-    }
-    dfs(1);
-    int long_path = path_count.top();
-    path_count.pop();
-    answer++;
-    while (!path_count.empty()) {
-        cout << path_count.top()<<endl;
-        path_count.pop();
-
-        /*if (path_count.top() == long_path)
-            ++answer;
-        else
-            break;*/
-    }
-
-    return answer;
-}
-
-int main() {
-    cout<<solution(6, { {3, 6}, {4, 3}, {3, 2}, {1, 3}, {1, 2}, {2, 4}, {5, 2} });
-}
+/*가장 먼 노드*/
+//#include <string>
+//#include <vector>
+//#include <queue>
+//#include <functional>
+//using namespace std;
+//
+//vector<bool>visited;
+//vector<vector<int>>graph;
+//vector<int>path;
+//priority_queue<int, vector<int>, greater<>>path_count;
+//
+//
+//void dfs(int x ) {
+//    visited[x] = true;
+//    path.push_back(x);
+//
+//    if (x == 1) {
+//        path_count.push(path.size());
+//    }
+//    
+//    for (int node : graph[x]) {
+//        if (!visited[node]) {
+//            dfs(node);
+//        }
+//    }
+//    path.pop_back();
+//    visited[x] = false;
+//}
+//
+//int solution(int n, vector<vector<int>> edge) {
+//    int answer = 0;
+//    visited.resize(n+1, false);
+//    graph.resize(n + 1);
+//
+//    for (auto &pair : edge) {
+//        int x = pair[0];
+//        int y = pair[1];
+//        graph[x].push_back(y);
+//    }
+//    dfs(1);
+//    int long_path = path_count.top();
+//    path_count.pop();
+//    answer++;
+//    while (!path_count.empty()) {
+//        cout << path_count.top()<<endl;
+//        path_count.pop();
+//
+//        /*if (path_count.top() == long_path)
+//            ++answer;
+//        else
+//            break;*/
+//    }
+//
+//    return answer;
+//}
+//
+//int main() {
+//    cout<<solution(6, { {3, 6}, {4, 3}, {3, 2}, {1, 3}, {1, 2}, {2, 4}, {5, 2} });
+//}
