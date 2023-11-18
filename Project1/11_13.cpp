@@ -192,57 +192,57 @@
 
 
 
-#include <iostream>
-#include <vector>
-
-
-using namespace std;
-
-int main() {
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL); cout.tie(NULL);
-
-	vector<int>answer;
-	int t; cin >> t;
-	for (int i = 0; i < t; i++) {
-		int x; cin >> x;
-		int ans = 0;
-		vector<int> costs;
-		int d1, d2;
-		cin >> d1;
-
-		for (int j = 1; j < x; j++) {
-			cin >> d2;
-			int div = d2 - d1;
-
-			if (div > 0) {
-				if (!costs.empty()) {
-					costs.push_back(div + costs.back());
-				}
-				else
-					costs.push_back(div);
-			}
-			else
-			{
-				if (!costs.empty()) {
-					if (div - costs.back() > 0) {
-						costs.push_back(div - costs.back());
-					}
-				}
-				else
-					costs.push_back(div);
-			}
-			d1 = d2;
-		}
-		if (costs.back() <= 0) {
-			answer.push_back(0);
-		}
-		else
-			answer.push_back(costs.back());
-	}
-	
-	for (int i = 0; i < t; i++) {
-		cout << "#" << i + 1 << " " << answer[i] << "\n";
-	}
-	return 0;
-}
+//#include <iostream>
+//#include <vector>
+//
+//
+//using namespace std;
+//
+//int main() {
+//	ios_base::sync_with_stdio(false);
+//	cin.tie(NULL); cout.tie(NULL);
+//
+//	vector<int>answer;
+//	int t; cin >> t;
+//	for (int i = 0; i < t; i++) {
+//		int x; cin >> x;
+//		int ans = 0;
+//		vector<int> costs;
+//		int d1, d2;
+//		cin >> d1;
+//
+//		for (int j = 1; j < x; j++) {
+//			cin >> d2;
+//			int div = d2 - d1;
+//
+//			if (div > 0) {
+//				if (!costs.empty()) {
+//					costs.push_back(div + costs.back());
+//				}
+//				else
+//					costs.push_back(div);
+//			}
+//			else
+//			{
+//				if (!costs.empty()) {
+//					if (div - costs.back() > 0) {
+//						costs.push_back(div - costs.back());
+//					}
+//				}
+//				else
+//					costs.push_back(div);
+//			}
+//			d1 = d2;
+//		}
+//		if (costs.back() <= 0) {
+//			answer.push_back(0);
+//		}
+//		else
+//			answer.push_back(costs.back());
+//	}
+//	
+//	for (int i = 0; i < t; i++) {
+//		cout << "#" << i + 1 << " " << answer[i] << "\n";
+//	}
+//	return 0;
+//}
