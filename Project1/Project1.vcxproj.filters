@@ -450,5 +450,11 @@
     <ClCompile Include="11_18.cpp">
       <Filter>소스 파일\2023\2023/11</Filter>
     </ClCompile>
+    <ClCompile Include="11_19.cpp">
+      <Filter>소스 파일\2023\2023/11</Filter>
+    </ClCompile>
+    <ClCompile Include="11_20.cpp">
+      <Filter>소스 파일\2023\2023/11</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
